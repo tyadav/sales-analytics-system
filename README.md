@@ -1,4 +1,4 @@
-# Module 3: Python Programming
+## Sales Analytics System
 Python Programming Assignment - Sales Analytics System
 # “Turn messy sales data into powerful insights — clean, enrich, analyze, and report with ease.”
 
