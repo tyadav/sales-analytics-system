@@ -1,6 +1,6 @@
-## Sales Analytics System
+# Sales Analytics System
 Python Programming Assignment - Sales Analytics System
-# “Turn messy sales data into powerful insights — clean, enrich, analyze, and report with ease.”
+## “Turn messy sales data into powerful insights — clean, enrich, analyze, and report with ease.”
 
 The Sales Analytics System is a Python-based solution designed for e-commerce companies to transform raw, messy sales data into actionable business insights. It automates the process of data cleaning, API integration for product enrichment, sales pattern analysis, and report generation.
 
