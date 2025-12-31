@@ -1,0 +1,1 @@
+{'TransactionID': 'T031', 'Date': '2024-12-24', 'ProductID': 'P102', 'ProductName': 'Mouse', 'Quantity': 8, 'UnitPrice': 441.0, 'CustomerID': 'C025', 'Region': 'South', 'API_Category': None, 'API_Brand': None, 'API_Rating': None, 'API_Match': False}
