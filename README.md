@@ -29,7 +29,7 @@ sales-analytics-system/
 
 ## ⚙️ Setup Instructions
 **Clone the repository**
-   ```bash
+   bash
    git clone https://github.com/tyadav/sales-analytics-system.git
    cd sales-analytics-system
 
@@ -43,16 +43,16 @@ numpy==1.26.4
 requests==2.32.3
 matplotlib==3.10.7
 
-**## Setup**
+## Setup
 Create and activate a virtual environment:
 python -m venv .venv
 .venv\Scripts\activate
 
-**## Execute**
+## Execute
 Run the main pipeline:
 python main.py
 
-**## The cleaning step will print:**
+## The cleaning step will print:
 Total records parsed: 80
 Invalid records removed: 10
 Valid records after cleaning: 70
