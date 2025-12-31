@@ -1,0 +1,3 @@
+Total records parsed: 15
+Invalid records removed: 0
+Valid records after cleaning: 15

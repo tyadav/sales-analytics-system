@@ -1,0 +1,19 @@
+Sales Summary Report
+====================
+
+Top Products:
+- headphones: ₹50029.00
+- external hard drive: ₹34218.00
+- monitorled: ₹32134.00
+- wireless mouse: ₹19934.00
+- keyboard: ₹14584.00
+
+Top Customers:
+- C028: ₹48359.00
+- C002: ₹34218.00
+- C019: ₹32134.00
+- C011: ₹24144.00
+- C025: ₹16254.00
+
+Regional Sales:
+- North: ₹189741.00

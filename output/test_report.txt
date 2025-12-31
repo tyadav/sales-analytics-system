@@ -1,0 +1,17 @@
+Sales Summary Report
+--------------------
+
+Top Products:
+  laptop - Rs.90000.00
+  monitor - Rs.10000.00
+  mouse - Rs.7500.00
+
+Top Customers:
+  C001 - Rs.90000.00
+  C003 - Rs.10000.00
+  C002 - Rs.7500.00
+
+Regional Sales:
+  North - Rs.90000.00
+  West - Rs.10000.00
+  South - Rs.7500.00

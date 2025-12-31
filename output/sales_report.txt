@@ -1,0 +1,48 @@
+============================================
+           SALES ANALYTICS REPORT
+         Generated: 2025-12-30 22:16:30
+         Records Processed: 1
+============================================
+
+OVERALL SUMMARY
+--------------------------------------------
+Total Revenue:        ₹3,528.00
+Total Transactions:   1
+Average Order Value:  ₹3,528.00
+Date Range:           2024-12-24 to 2024-12-24
+
+REGION-WISE PERFORMANCE
+--------------------------------------------
+Region    Sales         % of Total  Transactions
+South    ₹3,528   100.00%      1
+
+TOP 5 PRODUCTS
+--------------------------------------------
+Rank  Product Name        Quantity   Revenue
+1    Mouse             8         ₹3,528
+
+TOP 5 CUSTOMERS
+--------------------------------------------
+Rank  Customer ID   Total Spent   Orders
+1    C025         ₹3,528   1
+
+DAILY SALES TREND
+--------------------------------------------
+Date         Revenue       Transactions   Unique Customers
+2024-12-24   ₹3,528   1   1
+
+PRODUCT PERFORMANCE ANALYSIS
+--------------------------------------------
+Best Selling Day: 2024-12-24 (₹3,528, 1 transactions)
+Low Performing Products:
+  Mouse - Qty=8, Revenue=₹3,528
+Average Transaction Value per Region:
+  South: ₹3,528.00
+
+API ENRICHMENT SUMMARY
+--------------------------------------------
+Total Products Enriched: 0/1
+Success Rate: 0.00%
+Failed Products:
+  Mouse
+

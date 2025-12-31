@@ -1,0 +1,20 @@
+timestamp,region,min_amount,max_amount,valid_count,invalid_count,error
+2025-12-30 20:29:12,North,200,800,7,0,
+2025-12-30 20:32:02,North,200,900,7,0,
+2025-12-30 20:46:13,North,200,600,5,0,
+2025-12-30 20:50:09,South,200,500,1,0,
+2025-12-30 20:51:43,East,200,400,1,0,
+2025-12-30 21:06:37,North,300,500,2,0,'numpy.ndarray' object is not callable
+2025-12-30 21:15:50,North,200,300,2,0,'numpy.ndarray' object is not callable
+2025-12-30 21:20:15,North,200,900,7,0,'numpy.ndarray' object is not callable
+2025-12-30 21:22:58,Sounth,200,300,0,0,'Quantity'
+2025-12-30 21:36:19,North,200,500,4,0,'numpy.ndarray' object is not callable
+2025-12-30 21:38:44,North,200,500,4,0,'numpy.ndarray' object is not callable
+2025-12-30 21:40:47,North,200,400,3,0,
+2025-12-30 21:40:50,North,200,400,3,0,'product_summary'
+2025-12-30 21:43:35,North,200,500,4,0,'numpy.ndarray' object is not callable
+2025-12-30 21:47:48,North,100,500,4,0,
+2025-12-30 21:47:50,North,100,500,4,0,'value' must be an instance of str or bytes, not a float
+2025-12-30 21:52:52,North,200,500,4,0,
+2025-12-30 22:04:11,South,200,900,4,0,
+2025-12-30 22:16:28,South,200,500,1,0,
