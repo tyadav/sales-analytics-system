@@ -2,7 +2,7 @@
 ## “Turn messy sales data into powerful insights — clean, enrich, analyze, and report with ease.”
 
 This project is a modular Python-based analytics system that processes raw sales transaction data, validates and enriches it, and generates a business-ready report. It supports optional filtering by region and amount, integrates product data from an external API, and produces a clean summary of sales performance.
----
+
 
 ## 📁 Project Structure
 With this system, we can:
@@ -13,7 +13,7 @@ With this system, we can:
 
 This repository provides a complete, ready-to-run framework for sales data analytics, making it easier for analysts and managers to uncover trends and drive growth.
 
-# Repository Structure:
+## Repository Structure:
 sales-analytics-system/
   ├── README.md
   ├── main.py
@@ -25,10 +25,9 @@ sales-analytics-system/
   │   └── sales_data.txt
   ├── output/
   └── requirements.txt
----
+
 
 ## ⚙️ Setup Instructions
-
 **Clone the repository**
    ```bash
    git clone https://github.com/tyadav/sales-analytics-system.git
@@ -44,16 +43,16 @@ numpy==1.26.4
 requests==2.32.3
 matplotlib==3.10.7
 
-## Setup
+**## Setup**
 Create and activate a virtual environment:
 python -m venv .venv
 .venv\Scripts\activate
 
-## Execute
+**## Execute**
 Run the main pipeline:
 python main.py
 
-## The cleaning step will print:
+**## The cleaning step will print:**
 Total records parsed: 80
 Invalid records removed: 10
 Valid records after cleaning: 70
