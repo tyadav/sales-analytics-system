@@ -1,27 +1,29 @@
+# import all the libraries
 import os
 import sys
 import pandas as pd
 
+# Import custom helper functions from utils/
 from utils.file_handler import read_sales_data, parse_transactions, clean_sales_data
 from utils.validator import validate_transactions
 from utils.logger import log_run
 from utils.api_handler import (
-    fetch_all_products,
-    create_product_mapping,
-    enrich_sales_data,
+    fetch_all_products,            # Calls external API to fetch product list
+    create_product_mapping,        # Maps product IDs/names for enrichment
+    enrich_sales_data,             # Adds API info to local sales transactions
 )
 from utils.data_processor import (
-    calculate_total_revenue,
-    daily_sales_trend,
-    find_peak_sales_day,
-    low_performing_products,
-    generate_sales_report,
+    calculate_total_revenue,        # Sum of all transaction amounts
+    daily_sales_trend,              # Revenue/transactions grouped by day
+    find_peak_sales_day,            # Identify the day with highest sales
+    low_performing_products,        # Products with low sales/revenue
+    generate_sales_report,          # Write analysis results to a text file
     generate_daily_sales_chart,
-    average_order_value,
-    region_performance,
-    top_products,
-    top_customers,
-    daily_sales_stats,
+    average_order_value,            # Average revenue per transaction
+    region_performance,             # Revenue grouped by region
+    top_products,                   # Top-selling products by revenue/quantity
+    top_customers,                  # Customers contributing most revenue
+    daily_sales_stats,              # Daily summary (revenue, transactions)
 )
 
 
@@ -35,7 +37,11 @@ def safe_input(prompt: str) -> str:
 
 
 def ensure_df(obj, columns=None):
-    """Normalize various return types into a pandas DataFrame."""
+    """
+    Normalize various return types into a pandas DataFrame.
+    - Handles dict, list, tuple, ndarray, or None.
+    - Ensures downstream code always works with DataFrames.
+    """
     if isinstance(obj, pd.DataFrame):
         return obj.copy()
     if obj is None:
@@ -54,8 +60,19 @@ def ensure_df(obj, columns=None):
 def main():
     """
     Main execution function for Sales Analytics System.
-    This version omits chart and Excel generation per assignment requirements.
+    Steps:
+    1. Read raw sales data
+    2. Parse and clean transactions
+    3. Allow user to filter by region/amount
+    4. Validate transactions
+    5. Analyze sales (revenue, AOV, top products/customers, etc.)
+    6. Fetch product info from API
+    7. Enrich sales data with API mapping
+    8. Save enriched data
+    9. Generate text report
+    10. (Charts/Excel omitted per assignment)
     """
+    # --- Setup folders ---
     os.makedirs("output", exist_ok=True)
     os.makedirs("data", exist_ok=True)
 
@@ -341,3 +358,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
