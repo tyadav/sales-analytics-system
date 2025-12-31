@@ -33,6 +33,7 @@ Python 3.10+ installed
 pandas==2.2.2 
 numpy==1.26.4 
 requests==2.32.3
+matplotlib==3.10.7
 
 # Setup
 Create and activate a virtual environment:
@@ -74,4 +75,6 @@ Top products, regions, and customers.
 Customer behavior patterns: frequency, spend, and product mix.
 Outputs business-ready CSV reports.
 
-
+## Contact
+For any queries related to this project, please contact:  
+📧 tej_on@outlook.com
