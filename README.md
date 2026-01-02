@@ -1,8 +1,7 @@
 # Sales Analytics System
+
 ## “Turn messy sales data into powerful insights — clean, enrich, analyze, and report with ease.”
-
 This project is a modular Python-based analytics system that processes raw sales transaction data, validates and enriches it, and generates a business-ready report. It supports optional filtering by region and amount, integrates product data from an external API, and produces a clean summary of sales performance.
-
 
 ## 📁 Project Structure
 <pre>
@@ -110,4 +109,4 @@ No hardcoded paths
 </pre>
 ### Contact
 For any queries related to this project, please contact:  
-📧 tej_on@outlook.com
+📧 tej.yadav@yahoo.com
