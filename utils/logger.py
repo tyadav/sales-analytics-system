@@ -17,7 +17,7 @@ def log_run(filters, valid_count, invalid_count, error=None, logfile="output/run
         error if error else ""
     ]
 
-    # Write header if file is new
+    #Write header if file is new
     try:
         with open(logfile, "x") as f:
             f.write("timestamp,region,min_amount,max_amount,valid_count,invalid_count,error\n")
@@ -27,3 +27,4 @@ def log_run(filters, valid_count, invalid_count, error=None, logfile="output/run
     # Append row
     with open(logfile, "a") as f:
         f.write(",".join(map(str, row)) + "\n")
+
