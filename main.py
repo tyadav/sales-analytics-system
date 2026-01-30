@@ -26,7 +26,6 @@ from utils.data_processor import (
     daily_sales_stats,              # Daily summary (revenue, transactions)
 )
 
-
 def safe_input(prompt: str) -> str:
     """Handle interactive input safely and exit on interrupt."""
     try:
@@ -34,7 +33,6 @@ def safe_input(prompt: str) -> str:
     except (EOFError, KeyboardInterrupt):
         print("\nInput cancelled. Exiting.")
         sys.exit(0)
-
 
 def ensure_df(obj, columns=None):
     """
@@ -55,7 +53,6 @@ def ensure_df(obj, columns=None):
         return pd.DataFrame(obj)
     except Exception:
         return pd.DataFrame(columns=columns) if columns else pd.DataFrame()
-
 
 def main():
     """
@@ -147,7 +144,7 @@ def main():
                             if float(tx.get("UnitPrice", 0)) >= min_val
                         ]
                     except ValueError:
-                        print("⚠️ Invalid minimum amount. Ignoring.")
+                        print("Invalid minimum amount. Ignoring.")
 
                 if max_amt:
                     try:
@@ -157,13 +154,13 @@ def main():
                             if float(tx.get("UnitPrice", 0)) <= max_val
                         ]
                     except ValueError:
-                        print("⚠️ Invalid maximum amount. Ignoring.")
+                        print("Invalid maximum amount. Ignoring.")
 
                 parsed = filtered
                 print(f"✓ Filter applied, {len(parsed)} records remain\n")
 
                 if not parsed:
-                    print("⚠️ No transactions match the filter criteria.")
+                    print("No transactions match the filter criteria.")
                     retry = safe_input("Would you like to try different filters? (y/n): ").strip().lower()
                     if retry == "y":
                         continue
@@ -186,7 +183,7 @@ def main():
         print("[5/10] Analyzing sales data...")
 
         if not valid:
-            print("⚠️ No valid transactions to analyze.")
+            print("No valid transactions to analyze.")
             analysis = {
                 "total_revenue": 0.0,
                 "average_order_value": 0.0,
@@ -272,9 +269,9 @@ def main():
             with open(enriched_path, "w", encoding="utf-8") as f:
                 for tx in enriched:
                     f.write(str(tx) + "\n")
-            print("✅ Enriched data saved to data/enriched_sales_data.txt")
+            print("Enriched data saved to data/enriched_sales_data.txt")
         except Exception as save_err:
-            print(f"⚠️ Failed to save enriched data: {save_err}")
+            print(f"Failed to save enriched data: {save_err}")
 
         print(f"✓ Enriched {enriched_count}/{len(enriched)} transactions ({success_rate:.1f}%)\n")
 
@@ -290,7 +287,7 @@ def main():
         # [9/10] Generate report
         print("[9/10] Generating report...")
         if not valid:
-            print("⚠️ No valid transactions, skipping report generation.\n")
+            print("No valid transactions, skipping report generation.\n")
         else:
             generate_sales_report(valid, enriched, output_file="output/sales_report.txt")
             print("✅ Sales report generated at output/sales_report.txt")
@@ -358,4 +355,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
